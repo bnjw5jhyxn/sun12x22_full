@@ -24,16 +24,16 @@ sun12x22.txt: font_sun12x22.c
 	v//s/1/X/g
 # insert header
 	1i
-	pplusfont-text-file
-	ppluschars
+	p+font-text-file
+	p+chars
 	256
-	ppluswidth
+	p+width
 	12
-	pplusheight
+	p+height
 	22
 	.
 # put in plus signs
-	1,6s/^pplus/++/g
+	1,6s/^p/+/g
 # write to file
 	w sun12x22.txt
 	EOF
